@@ -10,7 +10,7 @@ body{
 /* Cabeçalho */ 
   header{
     margin: 10px 0  ;
-    padding: 0 100px;
+    padding: 0 100px;  
   }
 
   /* Parte da intereção */
@@ -18,6 +18,7 @@ body{
   #interation{
     display: flex;
     justify-content: space-between;
+    gap: 20px ;
   }
 
   /* botão deafault */
@@ -58,6 +59,10 @@ body{
     color: black;
   }
 
+  #seach input:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+  }
   #btn-seach{
       background-color: aliceblue;
       cursor: auto;
@@ -76,11 +81,11 @@ body{
     }
 
   /* Nav-bar */
-
   .options-dishes{
     display: flex;
     padding: 0 100px;
     justify-content: space-between;
+    gap: 10px;
   }
 
   .option{
@@ -91,7 +96,7 @@ body{
     height: 150px;
     background-color: #cedf9f1e;
     border: 1px solid #383d2b;
-    border-radius: 30px;
+    border-radius: 50px;
     align-items: center;
     justify-content: center;
     transition: all ease 0.5s;
@@ -103,31 +108,47 @@ body{
 
 /* food */
   #candy{
-    height: 110px;
-    width: 110px;
+    height: 70%;
+    width: 70%;
   }
 
   #pizza{
-    height: 100px;
-    width: 100px;
+    height: 70%;
+    width: 70%;
   }
 
   #bife{
-    width: 115px;
-    height: 160px;
+    width: 75%;
+    height: 110%;
   }
 
   #prato{
-    width: 120px;
-    height: 120px;
+    width: 85%;
+    height: 85%;
   }
 
   #drink{
-    position: absolute;
-    top: 10px;
-    width: 120px;
+    position: relative;
+    top: -5px;
+    width: 75%;
   }
 
   #vegan{
-    height: 110px;
+    height: 75%;
   }
+
+
+
+  /* responsividade */
+@media screen and (max-width: 600px){
+
+  header{
+    padding: 0 20px;  
+
+  }
+
+
+  #btn-user{
+    display: none;
+  }
+}
