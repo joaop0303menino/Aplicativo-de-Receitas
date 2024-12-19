@@ -64,33 +64,70 @@ body{
   }
 
   /* botão de usuario e carrinho */
-  #user{
+    #user{
+      display: flex;
+      gap: 20px;
+    }
+
+    #btn-cart{
+      background-color: #fff;
+      border: 1px solid #CEDF9F;
+      color: #CEDF9F;
+    }
+
+  /* Nav-bar */
+
+  .options-dishes{
     display: flex;
-    gap: 20px;
+    padding: 0 100px;
+    justify-content: space-between;
   }
 
-  #btn-cart{
-    background-color: #fff;
-    border: 1px solid #CEDF9F;
-    color: #CEDF9F;
+  .option{
+    display: flex;
+    position: relative;
+    margin: 30px 0px;
+    width: 150px;
+    height: 150px;
+    background-color: #cedf9f1e;
+    border: 1px solid #383d2b;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
   }
 
-/* Nav-bar */
+  .option:hover{
+    background-color: #CEDF9F;
+  }
 
-.options-dishes{
-  display: flex;
-  padding: 0 100px;
-  justify-content: space-between;
-}
+/* food */
+  #candy{
+    height: 110px;
+    width: 110px;
+  }
 
-.option{
-  display: flex;
-  margin: 10px;
-  width: 150px;
-  height: 150px;
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-}
+  #pizza{
+    height: 100px;
+    width: 100px;
+  }
+
+  #bife{
+    width: 115px;
+    height: 160px;
+  }
+
+  #prato{
+    width: 120px;
+    height: 120px;
+  }
+
+  #drink{
+    position: absolute;
+    top: 10px;
+    width: 120px;
+  }
+
+  #vegan{
+    height: 110px;
+  }
