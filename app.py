@@ -1,12 +1,22 @@
 from flask import *
 
-app = Flask(__name__)
-
-@app.route("/")
-def login():
+class Servidor:
+    def __init__(self, nome):
+        self.app = Flask(nome)
     
-    
-    return render_template("index.html")
+        @self.app.route("/")
+        def Login():
+            return self.login()
 
+    def login(self):
+        return render_template("index.html")
+    
+    def Run(self):
+        self.app.run(debug=True)
+
+def main():
+    servidor = Servidor(__name__)
+    servidor.Run()
+    
 if __name__ == "__main__":
-    app.run(debug=True)
+    main()
