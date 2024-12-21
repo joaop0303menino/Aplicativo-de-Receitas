@@ -25,9 +25,7 @@ class Requisicao:
             requisicao_json = self.requisicao_get.json()
             print(requisicao_json)
             return requisicao_json
-        
-    
-    
+         
 request = Requisicao(f"https://api-receitas-pi.vercel.app/receitas/todas")
 request.json
 
