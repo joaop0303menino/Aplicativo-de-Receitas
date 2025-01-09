@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -31,44 +34,28 @@ body{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: box-shadow ease 0.3s;
+    width: 50px;
   }
 
   .btn:hover{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
-  /* pesquisar */
-  #seach{
-    display: flex;
-    width: 80%;
-    position: relative;
-  }
 
-  #seach i{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #CEDF9F; 
-    margin: 0 13px;
-  }
-
-  #seach input{
-    padding-left: 40px;
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    color: black;
-  }
-
-  #seach input:focus{
+  .btn:focus{
     outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.075);
+    border: 0.1px solid #49523231;
   }
-  #btn-seach{
-      background-color: aliceblue;
-      cursor: auto;
+  /* Logo */
+  #logo{
+    font-size: 1.2rem;
+    color: #404631;
   }
 
-  /* botão de usuario e carrinho */
+  #logo span{
+    color: #8d996c;
+  }
+  
+/* botão de usuario e carrinho */
     #user{
       display: flex;
       gap: 20px;
@@ -79,6 +66,90 @@ body{
       border: 1px solid #CEDF9F;
       color: #CEDF9F;
     }
+
+    /* CTA */
+    #home{
+      min-height: calc(100vh - 55px);
+      display: flex;
+      position: relative;
+      padding: 10px 100px;
+    }
+
+    #cta{
+      padding-top: 5%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 70%;
+    }
+
+    /* tittle */
+    .cta-tittle{
+      font-size: 2.5rem;
+    }
+
+    .cta-tittle span{
+      color: #404631;
+    }
+
+    /* descripition */
+    .cta-desc{
+      font-size: 1.2rem;
+    }
+    
+    .cta-desc span{
+      color: #78a10f;
+      text-decoration: underline;
+     }
+    
+
+    .cta-input{
+      position: relative;
+      display: inline-block;
+    }
+
+    .cta-input i{
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #383d2b;
+    }
+    
+    .cta-input input{
+      color: rgb(31, 31, 31);
+      padding-left: 30px;
+      cursor: auto;
+      background-color: #fafcd4;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* banner */
+
+    .banner img{
+      width: 100%;
+      height: 95%;
+      border-radius: 50%;
+    }
+    
+    .shape{
+      background-color: #CEDF9F;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      border-radius: 40% 30% 0% 20%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+  }
+
+    /* seach */
+    
+    #btn-seach{
+      width: 100%;
+    }
+
 
   /* Nav-bar */
   .options-dishes{
@@ -137,18 +208,18 @@ body{
     height: 75%;
   }
 
-
+ 
 
   /* responsividade */
-@media screen and (max-width: 600px){
+  @media screen and (max-width: 600px){
 
-  header{
-    padding: 0 20px;  
-
+    header{
+      padding: 0 20px;  
+  
+    }
+  
+  
+    #btn-user{
+      display: none;
+    }
   }
-
-
-  #btn-user{
-    display: none;
-  }
-}

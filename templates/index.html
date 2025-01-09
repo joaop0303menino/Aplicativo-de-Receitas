@@ -8,16 +8,17 @@
     <title>Receitas</title> 
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
         <div id="interation">
             <!-- hamburguer -->
             <button class="btn"><i class="fa-solid fa-bars"></i></button>
-            <!-- area de pesquisa -->
-            <div id="seach">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Procure por sua receita..." class="btn" id="btn-seach">
+            <div id="logo">
+                <h1 class="logo-text">
+                    FOOD <span>FONT</span>
+                </h1>
             </div>
-            <!-- usuario -->
+            <!-- usuario -->    
             <div id="user">
                 <button class="btn" id="btn-user"><i class="fa-solid fa-user"></i></button>
                 <button class="btn" id="btn-cart" ><i class="fa-solid fa-cart-shopping"></i></button>
@@ -25,15 +26,36 @@
         </div>
     </header>
 
+    <!-- cta -->
+    <section id="home">
+        
+        <div id="cta">
+            <div class="cta-text">
+                <h1 class="cta-tittle">Oque vai querer <span>hoje?</span></h1>
+                <p class="cta-desc">Busque sua <span>receita</span> favorita e transforme ingredientes em momentos deliciosos!</p>
+            </div>    
+                
+            <div class="cta-input">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+                <input type="text" placeholder="pesquise..." class="btn" id="btn-seach">
+            </div>
+
+        </div>    
+            
+        <div class="banner">
+            <img src="/static/img/cta-img.png" alt="">
+        </div>
+    </section>
+    
+
+
+
     <nav>
         <div id="dishes">
             <div class="options-dishes">
                 <div class="option"><img src="/static/img/candy.png" alt="burger" id="candy"></div>
                 <div class="option" ><img src="/static/img/pizza.png" alt="" id="pizza"></div>
                 <div class="option" ><img src="/static/img/bife.png" alt="" id="bife" ></div>
-                <div class="option" ><img src="/static/img/prato.png" alt="" id="prato"></div>
-                <div class="option" ><img src="/static/img/drink.png" alt="" id="drink"></div>
-                <div class="option" ><img src="/static/img/vegan.png" alt="" id="vegan"></div>   
             </div>
         </div>
     </nav>
